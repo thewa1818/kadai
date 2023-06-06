@@ -8,6 +8,7 @@ $("h1").on("click", function () {
   if (random === 0){
     console.log("大吉です");
     $(".omikuji_kekka").html("大吉です");
+    $(".omikuji_kekka").html("<img src='img/daikichi.webp'>");
   }else if (random === 1){
     console.log("中吉です");
     $(".omikuji_kekka").html("中吉です");
