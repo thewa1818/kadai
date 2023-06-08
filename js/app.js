@@ -2,6 +2,7 @@
 
 $("h1").on("click", function () {
   $(".omikuji_kekka").fadeIn();
+  $("#sound1").get(0).play();
 
   const random = Math.floor(Math.random() * 5);
 

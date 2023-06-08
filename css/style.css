@@ -25,13 +25,16 @@
 }
 
 .omikuji_kekka {
-  /* display: none;
-  position: absolute;
+  display: none;
   z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 150px;
   width: 100%;
   height: 100%;
   background-image: repeating-conic-gradient(from 3deg, rgba(255, 255, 255, 1) 10deg 20deg, rgba(255, 0, 0, 1) 20deg 30deg);
-  opacity: 0.8; */
 }
 
 
@@ -52,4 +55,30 @@ position: relative;
  left: 0;
  width: 100%;
  height: 100%;
+}
+
+@keyframes fuwafuwa {
+  0%, 100% {
+    transform: translateY();
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.fuwafuwa1 {
+  animation: 3s fuwafuwa infinite;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  /* bottom: 0; */
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.fuwafuwa1 img {
+  width: 200px;
+  height: 200px;
 }
