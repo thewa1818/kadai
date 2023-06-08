@@ -3,6 +3,7 @@
 $("h1").on("click", function () {
   $(".omikuji_kekka").fadeIn();
   $("#sound1").get(0).play();
+  $(".close_btn").fadeIn();
 
   const random = Math.floor(Math.random() * 5);
 
@@ -23,3 +24,8 @@ $("h1").on("click", function () {
     $(".omikuji_kekka").html("<img src='img/suekichi.png'>");
   }
 });
+
+$(".close_btn").on("click",function(){
+  $(".omikuji_kekka").fadeOut();
+  $(".close_btn").fadeOut();
+})
