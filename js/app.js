@@ -22,6 +22,7 @@ $("h1").on("click", function () {
   }else if (random === 4){
     console.log("末です");
     $(".omikuji_kekka").html("<img src='img/suekichi.png'>");
+   
   }
 });
 
@@ -41,7 +42,4 @@ $(".btn2").on("click",function(){
   $(".btn1").fadeIn(1000);
 })
 
-$(".fuwafuwa1").on("click",function(){
-  $(this).addClass("pukapuka");
-  $(this).show(".fuwafuwa.pukapuka");
-  });
+
