@@ -29,3 +29,19 @@ $(".close_btn").on("click",function(){
   $(".omikuji_kekka").fadeOut();
   $(".close_btn").fadeOut();
 })
+
+$(".btn1").on("click",function(){
+  $(".header_list").slideToggle(1000);
+  $(".btn1").fadeOut(1000);
+  $(".btn2").fadeIn(1000);
+})
+$(".btn2").on("click",function(){
+  $(".header_list").slideToggle(1000);
+  $(".btn2").fadeOut(1000);
+  $(".btn1").fadeIn(1000);
+})
+
+$(".fuwafuwa1").on("click",function(){
+  $(this).addClass("pukapuka");
+  $(this).show(".fuwafuwa.pukapuka");
+  });
