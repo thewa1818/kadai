@@ -42,4 +42,45 @@ $(".btn2").on("click",function(){
   $(".btn1").fadeIn(1000);
 })
 
+$(".twitter_img").on("click",function(){
+  $(this).addClass("twt");
+  $(".twitter_text").css("display","block");
+})
 
+$(".twitter_img").on("mouseout",function(){
+  $(this).removeClass("twt");
+  $(".twitter_text").css("display","none");
+})
+
+
+$(".instagram_img").on("click",function(){
+  $(this).addClass("inst");
+  $(".instagram_text").css("display","block");
+})
+
+$(".instagram_img").on("mouseout",function(){
+  $(this).removeClass("inst");
+  $(".instagram_text").css("display","none");
+})
+
+
+$(".line_img").on("click",function(){
+  $(this).addClass("lin");
+  $(".line_text").css("display","block");
+})
+
+$(".line_img").on("mouseout",function(){
+  $(this).removeClass("lin");
+  $(".line_text").css("display","none");
+})
+
+
+$(".facebook_img").on("click",function(){
+  $(this).addClass("fb");
+  $(".facebook_text").css("display","block");
+})
+
+$(".facebook_img").on("mouseout",function(){
+  $(this).removeClass("fb");
+  $(".facebook_text").css("display","none");
+})
