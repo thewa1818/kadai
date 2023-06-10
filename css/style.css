@@ -239,9 +239,54 @@ position: fixed;
 }
 
 
-
-
 .twitter_text,.instagram_text,.line_text,.facebook_text {
   display: none;
   text-align: center;
+}
+
+.omedetou ,.maamaa, .donnmai {
+  display: none;
+  width: 400px;
+  height: 150px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 3px double #000;
+  text-align: center;
+  background-color: yellow;
+  position: absolute;
+  z-index: 30;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  font-size: 30px;
+}
+
+.ome_title{
+  font-size: 40px;
+  padding: 30px;
+}
+
+.ome_text {
+  font-size: 20px;
+}
+
+.qustion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.question_title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.qustion_text {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 20px;
 }

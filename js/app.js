@@ -10,18 +10,28 @@ $("h1").on("click", function () {
   if (random === 0){
     console.log("大吉です");
     $(".omikuji_kekka").html("<img src='img/daikichi.png'>");
+    $(".omedetou").fadeIn(3000);
+    $(".omedetou").css("display","block");
   }else if (random === 1){
     console.log("中吉です");
     $(".omikuji_kekka").html("<img src='img/chukichi.png'>");
+    $(".omedetou").fadeIn(3000);
+    $(".omedetou").css("display","block");
   }else if (random === 2){
     console.log("吉です");
     $(".omikuji_kekka").html("<img src='img/kichi.png'>");
+    $(".maamaa").fadeIn(3000);
+    $(".maamaa").css("display","block");
   }else if (random === 3){
     console.log("小吉です");
     $(".omikuji_kekka").html("<img src='img/chokichi.png'>");
+    $(".maamaa").fadeIn(3000);
+    $(".maamaa").css("display","block");
   }else if (random === 4){
     console.log("末です");
     $(".omikuji_kekka").html("<img src='img/suekichi.png'>");
+    $(".donnmai").fadeIn(3000);
+    $(".donnmai").css("display","block");
    
   }
 });
@@ -29,6 +39,9 @@ $("h1").on("click", function () {
 $(".close_btn").on("click",function(){
   $(".omikuji_kekka").fadeOut();
   $(".close_btn").fadeOut();
+  $(".omedetou").hide();
+  $(".maamaa").hide();
+  $(".donnmai").hide();
 })
 
 $(".btn1").on("click",function(){
@@ -44,6 +57,7 @@ $(".btn2").on("click",function(){
 
 $(".twitter_img").on("click",function(){
   $(this).addClass("twt");
+  $(".twitter_text").fadeIn(1000);
   $(".twitter_text").css("display","block");
 })
 
@@ -55,6 +69,7 @@ $(".twitter_img").on("mouseout",function(){
 
 $(".instagram_img").on("click",function(){
   $(this).addClass("inst");
+  $(".instagram_text").fadeIn(1000);
   $(".instagram_text").css("display","block");
 })
 
@@ -66,6 +81,7 @@ $(".instagram_img").on("mouseout",function(){
 
 $(".line_img").on("click",function(){
   $(this).addClass("lin");
+  $(".line_text").fadeIn(1000);
   $(".line_text").css("display","block");
 })
 
@@ -77,6 +93,7 @@ $(".line_img").on("mouseout",function(){
 
 $(".facebook_img").on("click",function(){
   $(this).addClass("fb");
+  $(".facebook_text").fadeIn(1000);
   $(".facebook_text").css("display","block");
 })
 
