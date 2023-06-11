@@ -115,3 +115,30 @@ $(function () {
     });
   });
 });
+
+$(".q1").on("click",function(){
+  $(".first_img").hide(1000);
+  $(".happy_img").show(1000);
+  $(".q_box").hide(1000);
+  $(".question_title").text("どうもありがとう!!");
+  $(".qustion_text").text("まんままんま〜〜!!!");
+  $(".qustion_wrap").addClass("after");
+})
+
+$(".q2").on("click",function(){
+  $(".first_img").hide(1000);
+  $(".soso_img").show(1000);
+  $(".q_box").hide(1000);
+  $(".question_title").text("あばよ!!!!!!!");
+  $(".qustion_text").text("ありがとう、メリー号");
+  $(".qustion_wrap").addClass("after");
+})
+
+$(".q3").on("click",function(){
+  $(".first_img").hide(1000);
+  $(".sad_img").show(1000);
+  $(".q_box").hide(1000);
+  $(".question_title").text("ごめんちゃい");
+  $(".qustion_text").text("シャーッハッハッハ");
+  $(".qustion_wrap").addClass("after");
+})
