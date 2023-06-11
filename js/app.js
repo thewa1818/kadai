@@ -142,3 +142,41 @@ $(".q3").on("click",function(){
   $(".qustion_text").text("シャーッハッハッハ");
   $(".qustion_wrap").addClass("after");
 })
+
+// $(document).ready(function(){
+//   $('.your-class').slick({
+//     setting-name:setting-value
+//   });
+// });
+
+
+$('.slider').slick({
+  arrows:false,
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true,
+  autoplay :true,
+  autoplaySpeed: 2000,
+});
+
+$(window).scroll(function() {
+  var pos = $(window).scrollTop();
+  // スクロール位置の研さ
+  if (150 < pos) {
+    // スクロールが200を超えたら「▲ ページの先頭へ」をゆっくりフェードインする (表示)
+    $('.scl_top').fadeIn('slow');
+  }
+  else {
+    // それ以外だったらフェードアウトする (非表示)
+    $('.scl_top').fadeOut('slow');
+  }
+});
+
+
+$('.scl_top a').click(function(){
+  // ページの先頭へ移動する
+  $('html,body').animate({scrollTop:0}, 'fast');
+});
