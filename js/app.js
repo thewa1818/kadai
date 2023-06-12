@@ -1,12 +1,12 @@
 
 
-$("h1").on("click", function () {
+$(".omikuji_title").on("click", function () {
   $(".omikuji_kekka").fadeIn();
   $("#sound1").get(0).play();
   $(".close_btn").fadeIn();
 
   const random = Math.floor(Math.random() * 5);
-
+  
   if (random === 0){
     console.log("大吉です");
     $(".omikuji_kekka").html("<img src='img/daikichi.png'>");
@@ -34,6 +34,7 @@ $("h1").on("click", function () {
     $(".donnmai").css("display","block");
    
   }
+
 });
 
 $(".close_btn").on("click",function(){
